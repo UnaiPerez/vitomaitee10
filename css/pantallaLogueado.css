@@ -1,0 +1,265 @@
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url('img/background.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+/* Estilos del encabezado */
+.header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex; /* Flexbox para organización */
+    justify-content: space-between; /* Espacio uniforme entre logo, título y botón */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px;
+    position: relative; /* Para posicionamiento absoluto si es necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.header-title {
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute; /* Coloca el título en el medio */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translateX(-50%); /* Ajusta para que esté exactamente centrado */
+}
+
+.btn-logout {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #ee5253;
+}
+
+/* Estilo para el contenedor de información del usuario */
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre la foto y el texto */
+    padding: 5px 10px;
+}
+
+/* Estilo para la foto del usuario */
+.userPhoto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Hacer la foto circular */
+    object-fit: cover; /* Ajustar la foto al contenedor sin deformarla */
+}
+
+/* Estilo para el nombre del usuario */
+#username {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* Funcionalidades */
+.functionalities {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.functionalities a {
+    color: #4a4e69;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.functionalities a:hover {
+    background-color: #4a4e69;
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+.dropdown-label {
+    cursor: pointer;
+    color: #4a4e69;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.5ease, color 0.5 ease;
+}
+
+.dropdown-menu a:hover{
+    background-color: #4a4e69;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+
+/* Contenido principal */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px;
+}
+
+.search-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.search-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #4a4e69;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.input-field:focus {
+    border-color: #4a4e69;
+    outline: none;
+}
+
+.city-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.city-options label {
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.city-options input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #4a4e69;
+}
+
+.btn-search-logueado {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a4e69;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-search-logueado:hover {
+    background-color: #222256;
+}
+
+/* Pie de página */
+.footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    color: #fff;
+}

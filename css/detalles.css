@@ -1,0 +1,117 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex; /* Flexbox para organización */
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.header-title {
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.btn-back {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: #ee5253;
+    color: #fff;
+}
+
+/* Contenedor principal */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#userDetails-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+#userDetails-container img.user-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#userDetails-container h2 {
+    font-size: 1.8em;
+    color: #4a4e69;
+    margin-bottom: 10px;
+}
+
+#userDetails-container p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+/* Botón Dar Like */
+.btn-like {
+    margin-bottom: 70px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-like:hover {
+    background-color: #ee4444;
+}
+

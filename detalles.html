@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Detalles del usuario visitado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/detalles.css">
+
+        <!-- Incluir db.js primero -->
+        <script src="js/db.js" defer></script>
+        <!-- Incluir otros scripts después de db.js -->
+        <script src="js/detalles.js" defer></script>
+        <script src="js/meGusta.js"></script>
+        
+        <style>
+            
+            body {
+                background-image: url('images/vitoMaiteFondo.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <header class="header">
+            <img src="images/logo.png" alt="Logo de VitoMaite" class="logo">
+            <h1 class="header-title">Detalles del usuario</h1>
+            <a href="resultadosLogueado.html" class="btn-back">Volver</a>
+        </header>
+        
+        <main class="main-content">
+            <div id="userDetails-container">
+                <!-- Aquí irán los detalles del usuario, se configura con JavaScript -->
+                
+            </div>
+        </main>
+        <button type="button" class="btn-like" id="btn-like">Me gusta</button>
+        <footer class="footer">
+            <p>&copy; 2024 VitoMaite10 - Encuentra el amor</p>
+        </footer>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHpPv4eeZrBdR12bfQJl2xZoEsCKuhtoc" defer></script>
+    </body>
+</html>

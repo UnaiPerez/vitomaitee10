@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Aficiones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/verAfi.css">
+    <style>
+            
+            body {
+                background-image: url('images/vitoMaiteFondo.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        </style>
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="Logo de VitoMaite" class="logo">
+        <h1 class="header-title">Ver mis Aficiones</h1>
+        <a href="pantallaLogueado.html" class="btn-back">Volver</a>
+    </header>
+
+    <main class="main-content">
+        <h2>Tus aficiones:</h2>
+        <form id="form-aficiones">
+            <div id="aficiones-container">
+                <!-- Las aficiones se cargan de manera dinamica a traves de verAfi.js -->
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 VitoMaite10 - Encuentra el amor</p>
+    </footer>
+
+    <script src="js/verAfi.js"></script>
+</body>
+</html>

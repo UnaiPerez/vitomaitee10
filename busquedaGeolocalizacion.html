@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda por Geolocalización</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/busquedaGeo.css">
+      
+    <style>
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+        .controls {
+            margin: 20px 0;
+        }
+        .controls label {
+            margin-right: 10px;
+        }
+        
+        body {
+                background-image: url('images/vitoMaiteFondo.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <img src="images/logo.png" alt="Logo de VitoMaite" class="logo">
+        <h1 class="header-title">Busqueda por geolocalizacion</h1>
+        <a href="pantallaLogueado.html" class="btn-back">Volver</a>
+    </header>
+    
+    <main class="main-content">
+    <div class="controls">
+        <label for="radius">Selecciona el radio (km):</label>
+        <input type="range" id="radius" min="0.5" max="2" step="0.5" value="1">
+        <span id="radius-value">1 km</span>
+    </div>
+    <div id="map"></div>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 VitoMaite - Encuentra el amor</p>
+    </footer>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHpPv4eeZrBdR12bfQJl2xZoEsCKuhtoc" defer></script>
+    <script src="js/busqGeo.js"></script>
+</body>
+</html>

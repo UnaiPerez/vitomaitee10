@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Perfil - VitoMaite10</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modificarPerfil.css">
+    <style>
+            
+            body {
+                background-image: url('images/vitoMaiteFondo.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="images/logo.png" alt="Logo de VitoMaite10" class="logo">
+        <h1 class="header-title">Modificar Perfil</h1>
+        <a href="pantallaLogueado.html" class="btn-back">Volver</a>
+    </header>
+
+    <!-- Main -->
+    <main class="profile-container">
+        <h2>Modifica tu Perfil</h2>
+        <form id="profile-form">
+            <!-- Foto de Perfil -->
+            <div class="form-group">
+                <label for="profile-photo">Foto de Perfil</label>
+                <div id="drop-zone">
+                    <p>Arrastra y suelta una imagen aquí o selecciona una</p>
+                    <input type="file" id="imagen" accept="image/*">
+                </div>
+                <div id="preview-container">
+                    <p>Vista previa:</p>
+                    <img id="preview-img" alt="Vista previa de la imagen">
+                </div>
+            </div>
+
+            <!-- Selección de Ciudad -->
+            <div class="form-group">
+                <label for="city">Ciudad</label>
+                <select id="city" class="input-field">
+                    <option value="" disabled selected>Selecciona una ciudad</option>
+                    <option value="Vitoria">Vitoria</option>
+                    <option value="Bilbao">Bilbao</option>
+                    <option value="Donosti">Donosti</option>
+                </select>
+            </div>
+
+            <!-- Botones -->
+            <div class="form-buttons">
+                <button type="button" id="btn-accept" class="btn-accept">Aceptar</button>
+                <button type="button" id="btn-cancel" class="btn-cancel">Cancelar</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 VitoMaite10 - Encuentra tu pareja ideal</p>
+    </footer>
+    <script src="js/modPerf.js"></script>
+</body>
+</html>
+
